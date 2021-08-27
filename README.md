@@ -10,3 +10,6 @@
 uaid获取方式: 学校公众号打开打卡信息, 右上角复制链接, 链接后即为uaid
 
 最新的selenium不支持92版本chrome使用静默模式时, 于是在服务器上我选择的是firefox, geckodriver
+
+邮箱部分可参考: https://www.runoob.com/python/python-email.html
+QQ邮箱教程拉至最下即可看到
