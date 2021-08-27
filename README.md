@@ -1,7 +1,7 @@
 # -
 健康上报打卡
 
-需要安装selenium, chromedriver/geckodriver取决于使用谷歌还是火狐
+需要安装selenium, 使用chromedriver/geckodriver取决于使用谷歌还是火狐
 
 需要修改如下信息：uaid 手机号 籍贯 家乡所在地 当前所在地 邮箱信息
 邮箱信息非必须, 如不需要请删除
