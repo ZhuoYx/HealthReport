@@ -52,6 +52,8 @@ select = Select(browser.find_element_by_css_selector(".ui-input-select .required
 select.select_by_value('广东')    # 此处修改家乡所在地省份
 select = Select(browser.find_element_by_css_selector(".ui-input-select .required[name='cityHome']"))
 select.select_by_value('韶关市')  # 此处修改家乡所在地市
+browser.find_element_by_xpath("//input[@name='addressHome']").clear()
+browser.find_element_by_xpath("//input[@name='addressHome']").send_keys("xxx")  # 此处修改家乡所在地的详细信息
 # 当前所在地
 select = Select(browser.find_element_by_xpath("//*[@id='cmbProvince']"))
 select.select_by_value('广东')    # 此处修改当前所在地省份
