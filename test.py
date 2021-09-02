@@ -71,7 +71,7 @@ browser.find_element_by_css_selector(".ui-radio .label[for='q36_2']").click()
 # 是否近两周接触过境外或高风险国家人员
 browser.find_element_by_css_selector(".ui-radio .label[for='q46_2']").click()
 # 返校前7天是否已做学校安排的核酸检测
-browser.find_element_by_css_selector(".ui-radio .label[for='q7_2']").click()
+browser.find_element_by_css_selector(".ui-radio .label[for='q7_1']").click()
 # 本人目前健康状态
 browser.find_element_by_css_selector(".ui-checkbox .label[for='jq_q21_0']").click()
 # 家庭成员目前健康状态
