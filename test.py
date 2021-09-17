@@ -117,11 +117,11 @@ def email(row_lists):
     # 邮箱部分
     # 使用第三方 SMTP 服务发送
     # QQ 邮箱通过生成授权码来设置密码
-    my_sender = '1303277465@qq.com'                      # 发送邮件, 可设置为你的QQ邮箱或者其他邮箱
-    my_pass = 'yyjacjffenpzibja'                         # 使用QQ邮箱生成的授权码
+    my_sender = ''                      # 发送邮件, 可设置为你的QQ邮箱或者其他邮箱
+    my_pass = ''                         # 使用QQ邮箱生成的授权码
     my_user = row_lists[17]                              # 接收邮件, 可设置为你的QQ邮箱或者其他邮箱, 发送邮件和接收邮件可为同一邮箱
     msg = MIMEText(final, 'plain', 'utf-8')              # 设置邮件内容，用的是之前签到返回的提示信息, 无需修改
-    msg['From'] = formataddr(['1303277465', my_sender])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号、 使用QQ号即可
+    msg['From'] = formataddr(['', my_sender])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号、 使用QQ号即可
     msg['To'] = formataddr([str(row_lists[16]), my_user])     # 括号里的对应收件人邮箱昵称、收件人邮箱账号、 使用QQ号即可
     msg['Subject'] = "健康打卡提醒"                       # 邮件的主题，也可以说是标题
     # 发送邮件
