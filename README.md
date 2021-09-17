@@ -1,12 +1,13 @@
 # 中山学院健康上报打卡
 
-需要安装selenium, 使用chromedriver/geckodriver取决于使用谷歌还是火狐
+需要安装selenium, pandas, xlrd, openpyxl, chromedriver/geckodriver取决于使用谷歌还是火狐
 
-* 需要修改如下信息：uaid, 手机号, 籍贯, 家乡所在地, 当前所在地, 邮箱信息
+* 如不需要邮箱，删除邮箱并修改excel运行即可
 * 邮箱信息非必须, 如不需要请删除
 * 其他信息默认正常无需修改
 
-#### uaid获取方式: 学校公众号打开打卡信息, 右上角复制链接, 链接后即为uaid
+#### excel表格删除红色那行示例后填写, 出行方式请对应学校公众号, 请勿随意填写
+#### uaid获取方式: 微信打开推送的打卡信息, 右上角复制链接, 链接后即为uaid
 
 由于selenium3.141版本不支持92版本chrome使用静默模式(不打开浏览器窗口模式), 于是在服务器上我选择的是firefox, geckodriver
 
