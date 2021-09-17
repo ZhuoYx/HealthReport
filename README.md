@@ -2,7 +2,7 @@
 
 需要安装selenium, pandas, xlrd, openpyxl, chromedriver/geckodriver取决于使用谷歌还是火狐
 
-* 如不需要邮箱，删除邮箱并修改excel运行即可
+* 如不需要邮箱，删除邮箱并修改HealthReport.xlsx运行即可
 * 邮箱信息非必须, 如不需要请删除
 * 其他信息默认正常无需修改
 
