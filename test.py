@@ -56,6 +56,9 @@ def signIn(row_lists):
     select.select_by_value(row_lists[5])
     browser.find_element_by_xpath("//input[@name='addressHome']").clear()
     browser.find_element_by_xpath("//input[@name='addressHome']").send_keys(row_lists[6])
+    # 常住地址
+    browser.find_element_by_xpath("//*[@name='address2']").clear()
+    browser.find_element_by_xpath("//*[@name='address2']").send_keys(row_lists[9])
     # 当前所在地
     select = Select(browser.find_element_by_css_selector(".ui-input-select .required[name='province']"))
     select.select_by_value(row_lists[7])
@@ -136,11 +139,11 @@ def email(row_lists):
 
 
 def excel():
-    pd.options.display.max_columns = None
-    pd.options.display.max_rows = None
-    dataFrame = pd.DataFrame(pd.read_excel('HealthReport.xlsx', engine='openpyxl'))
+    dataFrame = pd.DataFrame(pd.read_excel('HealthReport.xlsx', engine='openpyxl', keep_default_na=False))
     for index, row in dataFrame.iterrows():
         row_lists = list(row)
+        if row_lists[0] == '':
+            sys.exit()
         signIn(row_lists)
 
 
